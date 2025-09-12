@@ -1,5 +1,5 @@
-import img2 from '../../Assets/footerimg2.webp'
-import img3 from '../../Assets/footerimg3.webp'
+import img2 from '../../assets/footerimg2.webp'
+import img3 from '../../assets/footerimg3.webp'
 import "./Footer.css"
 
 function Footer() {
