@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background: rgb(0 47 52 / 3%);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  justify-content: space-between;
+  padding: 8px 16px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 48px;
+  vertical-align: middle
+}
+
+.location-box {
+  display: flex;
+  height: 48px;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background: white;
+  padding: 0 5px;
+}
+
+.location-box input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: clamp(120px, 22vw, 188px);
+}
+
+.location-box select {
+  border: none;
+  background: white;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.search-box {
+  display: flex;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 240px;
+  height: 48px;
+  background: white;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+
+.search-box button {
+  background: black;
+  color: white;
+ border-radius: 1px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.language select {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.wishlist {
+  font-size: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.username {
+  font-weight: bold;
+  color: #333;
+}
+
+.logout-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #f0f0f0;
+}
+
+.sell-btn {
+  border: none;
+  border-radius: 3px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 50px;
+  color: black;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 44px;
+  }
+
+  .location-box input {
+    width: clamp(120px, 25vw, 170px);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+
+  .search-box {
+    order: 3;
+    width: 100%;
+    min-width: 0;
+    height: 42px;
+  }
+
+  .search-box input {
+    padding: 8px;
+  }
+
+  .search-box button {
+    padding: 8px 12px;
+  }
+
+  .location-box {
+    height: 42px;
+    order: 2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .location-box input {
+    padding: 6px;
+    width: clamp(120px, 35vw, 150px);
+  }
+
+  .right-actions {
+    display: none;
+    order: 4;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 4px;
+  }
+
+  .right-actions.open {
+    display: flex;
+  }
+
+  .sell-btn {
+    height: 40px;
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 34px;
+  }
+
+  .location-box,
+  .search-box {
+    height: 38px;
+  }
+
+  .sell-btn {
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .wishlist {
+    font-size: 18px;
+  }
+
+  .login-btn {
+    font-size: 14px;
+  }
+
+  .language select {
+    font-size: 14px;
+  }
+}

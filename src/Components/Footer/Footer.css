@@ -1,0 +1,129 @@
+.footer-container {
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 49px;
+    position: relative;
+    width: 100%;
+    margin-top: 40%;
+    z-index: 8;
+}
+
+.top-container {
+    background-color: #f6f6f6;
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 16px 0;
+}
+
+.items-section {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Responsive Footer */
+@media (max-width: 1024px) {
+  .main-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .footer-container {
+    margin-top: 20%;
+  }
+  
+  .top-container {
+    padding: 12px 0;
+  }
+  
+  .items-section {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .footer-container {
+    margin-top: 15%;
+  }
+  
+  .main-section h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .main-section li {
+    font-size: 13px;
+    margin: 6px 0;
+  }
+  
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  
+  .app-buttons img {
+    width: 100px;
+    height: auto;
+    margin-top: 6px;
+  }
+}
+
+.main-section h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.main-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-section li {
+    margin: 4px 0;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.main-section li:hover {
+    text-decoration: underline;
+}
+.social-icons img {
+  width: 28px;   /* adjust size */
+  height: 28px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.app-butto img {
+  width: 120px;   /* reduce badge size */
+  height: auto;   /* keep aspect ratio */
+  margin-top: 8px;
+}
+
+

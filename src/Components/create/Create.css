@@ -1,0 +1,162 @@
+.create-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #007bff;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form-input,
+.form-textarea,
+.form-select,
+.form-file {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-file {
+    padding: 5px;
+}
+
+.form-button {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Create Form */
+@media (max-width: 768px) {
+  .create-container {
+    max-width: 100%;
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .post-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .form-file {
+    font-size: 16px; /* Prevents zoom on iOS */
+    padding: 12px;
+  }
+  
+  .form-textarea {
+    min-height: 80px;
+  }
+  
+  .form-button {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-container {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .close-btn {
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+  }
+  
+  .post-form h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-select,
+  .form-file {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-textarea {
+    min-height: 70px;
+  }
+  
+  .form-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .message {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
