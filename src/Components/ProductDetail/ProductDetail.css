@@ -7,7 +7,7 @@
 }
 
 .back-btn {
-  background: #002f34;
+  background: #000000;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -19,7 +19,7 @@
 }
 
 .back-btn:hover {
-  background: #005f6b;
+  background: #124d13;
 }
 
 .loading, .error {

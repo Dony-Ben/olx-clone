@@ -180,7 +180,6 @@ export default function ProductDetail() {
             <h3>Seller Information</h3>
             <div className="seller-details">
               <div className="seller-avatar">
-                <img src="/avatar.png" alt="Seller" />
               </div>
               <div className="seller-contact">
                 <div className="seller-email">{product.sellerEmail}</div>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Category.css"; 
+import "./Category.css";
 
 const categories = [
   "Cars",
